@@ -19,6 +19,34 @@ const values = [
   "Spaces designed to stand the test of time",
 ];
 
+const approach = [
+  {
+    number: "01",
+    title: "Understand",
+    description: "We listen to your needs, lifestyle, and vision.",
+  },
+  {
+    number: "02",
+    title: "Conceptualize",
+    description: "We turn ideas into meaningful design concepts.",
+  },
+  {
+    number: "03",
+    title: "Design",
+    description: "We balance aesthetics, functionality, and innovation.",
+  },
+  {
+    number: "04",
+    title: "Detail",
+    description: "We focus on materials, finishes, and every small element.",
+  },
+  {
+    number: "05",
+    title: "Deliver",
+    description: "We bring the vision to life with precision and quality.",
+  },
+];
+
 export default function AboutPage() {
   return (
     <main className="min-h-screen bg-[#FFFDF9] text-[#173B38]">
@@ -173,6 +201,191 @@ export default function AboutPage() {
                 <ArrowUpRight size={14} strokeWidth={1.8} />
               </span>
             </Link>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* The Visionary */}
+      <section className="relative overflow-hidden bg-[#FFFDF9] px-6 py-20 sm:px-8 lg:px-12 lg:py-28">
+        {/* Decorative circle */}
+        <div className="pointer-events-none absolute -left-40 top-10 h-[420px] w-[420px] rounded-full border border-[#173B38]/[0.04]" />
+
+        <div className="relative z-10 mx-auto max-w-7xl">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.25 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="mb-12"
+          >
+            <div className="mb-4 flex items-center gap-3">
+              <span className="h-px w-8 bg-[#173B38]/30" />
+
+              <p className="text-xs font-medium uppercase tracking-[0.3em] text-[#173B38]/50">
+                The Visionary
+              </p>
+            </div>
+
+            <h2 className="text-4xl font-light leading-tight tracking-[-0.035em] sm:text-5xl lg:text-6xl">
+              The mind behind <span className="italic">FloorVista.</span>
+            </h2>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 35 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.9, ease: "easeOut" }}
+            className="grid gap-10 lg:grid-cols-[0.7fr_1.3fr] lg:items-start lg:gap-20"
+          >
+            {/* Name */}
+            <div>
+              <p className="text-xs font-medium uppercase tracking-[0.25em] text-[#173B38]/40">
+                Founder
+              </p>
+
+              <h3 className="mt-4 text-3xl font-light tracking-tight text-[#173B38] sm:text-4xl">
+                Talla Vivek
+              </h3>
+
+              <div className="mt-6 h-px w-16 bg-[#C79A3B]" />
+            </div>
+
+            {/* Story */}
+            <div className="max-w-3xl">
+              <p className="text-lg leading-8 text-[#173B38]/70 sm:text-xl sm:leading-9">
+                <strong className="font-medium text-[#173B38]">
+                  Talla Vivek
+                </strong>{" "}
+                is driven by a deep passion for architecture, creativity, and
+                visualization. He believes architecture is more than designing
+                spaces—it is about creating experiences, expressing ideas, and
+                bringing imagination to life.
+              </p>
+
+              <p className="mt-6 text-base leading-8 text-[#173B38]/60 sm:text-lg">
+                With a strong appreciation for thoughtful design and visual
+                storytelling, his vision is to transform concepts into spaces
+                that feel purposeful, inspiring, and timeless. Through
+                FloorVista, he strives to explore new possibilities and create
+                designs that connect creativity with everyday living.
+              </p>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Our Approach */}
+      <section className="relative overflow-hidden bg-[#F8F7F3] px-6 py-20 sm:px-8 lg:px-12 lg:py-28">
+        {/* Decorative circles */}
+        <div className="pointer-events-none absolute -left-48 top-20 h-[500px] w-[500px] rounded-full border border-[#173B38]/[0.05]" />
+        <div className="pointer-events-none absolute -right-40 -bottom-40 h-[450px] w-[450px] rounded-full border border-[#173B38]/[0.05]" />
+
+        <div className="relative z-10 mx-auto max-w-7xl">
+          {/* Section Header */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.25 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="mb-14 max-w-3xl"
+          >
+            <div className="mb-4 flex items-center gap-3">
+              <span className="h-px w-8 bg-[#173B38]/30" />
+
+              <p className="text-xs font-medium uppercase tracking-[0.3em] text-[#173B38]/50">
+                Our Approach
+              </p>
+            </div>
+
+            <h2 className="text-4xl font-light leading-tight tracking-[-0.035em] sm:text-5xl lg:text-6xl">
+              From an idea to a space{" "}
+              <span className="italic">with purpose.</span>
+            </h2>
+          </motion.div>
+
+          {/* Approach Steps */}
+          <div className="grid grid-cols-1 gap-0 border-t border-[#173B38]/10 sm:grid-cols-2 lg:grid-cols-5">
+            {approach.map((item, index) => (
+              <motion.div
+                key={item.number}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.2 }}
+                transition={{
+                  duration: 0.7,
+                  delay: index * 0.08,
+                  ease: "easeOut",
+                }}
+                className="group border-b border-[#173B38]/10 px-1 py-8 sm:px-5 lg:border-b-0 lg:border-r lg:px-6 lg:py-9 lg:first:border-l"
+              >
+                <div className="flex items-center justify-between lg:block">
+                  <span className="text-xs font-medium tracking-[0.2em] text-[#C79A3B]">
+                    {item.number}
+                  </span>
+
+                  <ArrowUpRight
+                    size={17}
+                    strokeWidth={1.4}
+                    className="text-[#173B38]/25 transition-all duration-300 group-hover:rotate-45 group-hover:text-[#173B38]"
+                  />
+                </div>
+
+                <h3 className="mt-7 text-lg font-medium text-[#173B38]">
+                  {item.title}
+                </h3>
+
+                <p className="mt-3 text-sm leading-6 text-[#173B38]/55">
+                  {item.description}
+                </p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Vision & Mission */}
+      <section className="relative overflow-hidden bg-[#FFFDF9] px-6 py-20 sm:px-8 lg:px-12 lg:py-28">
+        <div className="mx-auto grid max-w-7xl gap-6 lg:grid-cols-2">
+          {/* Vision */}
+          <motion.div
+            initial={{ opacity: 0, x: -35 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 0.25 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="rounded-3xl bg-[#173B38] p-8 text-white sm:p-10 lg:p-12"
+          >
+            <p className="text-xs font-medium uppercase tracking-[0.3em] text-white/45">
+              Vision
+            </p>
+
+            <div className="mt-8 h-px w-12 bg-[#C79A3B]" />
+
+            <blockquote className="mt-8 max-w-xl text-2xl font-light leading-relaxed sm:text-3xl lg:text-4xl">
+              “To shape inspiring spaces that elevate the way people live, work,
+              and connect.”
+            </blockquote>
+          </motion.div>
+
+          {/* Mission */}
+          <motion.div
+            initial={{ opacity: 0, x: 35 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 0.25 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="rounded-3xl border border-[#173B38]/10 bg-[#F8F7F3] p-8 sm:p-10 lg:p-12"
+          >
+            <p className="text-xs font-medium uppercase tracking-[0.3em] text-[#173B38]/45">
+              Mission
+            </p>
+
+            <div className="mt-8 h-px w-12 bg-[#C79A3B]" />
+
+            <blockquote className="mt-8 max-w-xl text-2xl font-light leading-relaxed text-[#173B38] sm:text-3xl lg:text-4xl">
+              “To create thoughtful, timeless, and functional spaces through
+              innovative design, quality craftsmanship, and a deep understanding
+              of every client’s vision.”
+            </blockquote>
           </motion.div>
         </div>
       </section>

@@ -18,7 +18,7 @@ const projects = [
     number: "02",
     title: "Elevation Design",
     category: "ELEVATION DESIGN",
-    image: "/images/projects/elevation-design/12.jpg",
+    image: "/images/projects/elevation-design/1.jpg",
     folder: "elevation-design",
     sectionId: "elevation-design-02",
   },
