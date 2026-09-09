@@ -18,20 +18,12 @@ const projects = [
     number: "02",
     title: "Interior Design 01",
     category: "INTERIOR DESIGN",
-    image: "/images/projects/interior-design-1/3.png",
-    folder: "interior-design-1",
+    image: "/images/projects/interior-design/3.png",
+    folder: "interior-design",
     sectionId: "interior-design-03",
   },
   {
     number: "03",
-    title: "Interior Design 02",
-    category: "INTERIOR DESIGN",
-    image: "/images/projects/interior-design-2/6.png",
-    folder: "interior-design-2",
-    sectionId: "interior-design-04",
-  },
-  {
-    number: "04",
     title: "Architectural Planning",
     category: "ARCHITECTURAL PLANNING",
     image: "/images/projects/architectural-planning/3.png",
@@ -125,7 +117,7 @@ export default function SelectedProjects() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.15 }}
-          className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4 lg:gap-6"
+          className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8"
         >
           {projects.map((project) => (
             <motion.article
@@ -133,19 +125,7 @@ export default function SelectedProjects() {
               variants={fadeUp}
               className="group"
             >
-              {/* Image */}
-              {/* 
-                Use a normal anchor here instead of Next.js Link.
-
-                This guarantees that:
-                /projects#elevation-design-02
-                /projects#interior-design-03
-                /projects#interior-design-04
-                /projects#architectural-planning-01
-
-                will navigate to the Projects page and scroll
-                directly to the corresponding section.
-              */}
+              {/* Project Image */}
               <a
                 href={`/projects#${project.sectionId}`}
                 className="block cursor-pointer"
@@ -157,13 +137,13 @@ export default function SelectedProjects() {
                   </div>
 
                   {/* Image */}
-                  <div className="relative aspect-[1.28/1] overflow-hidden sm:aspect-[1.15/1] lg:aspect-[1.05/1]">
+                  <div className="relative aspect-[1.28/1] overflow-hidden sm:aspect-[1.15/1] lg:aspect-[1.15/1]">
                     <Image
                       src={project.image}
                       alt={project.title}
                       fill
                       className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.06]"
-                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33.333vw"
                     />
 
                     {/* Subtle overlay */}

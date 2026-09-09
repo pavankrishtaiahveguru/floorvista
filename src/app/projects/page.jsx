@@ -42,16 +42,8 @@ const serviceProjects = [
     title: "Interior Design",
     description:
       "Elegant interiors designed around comfort, character, functionality, and everyday living.",
-    folder: "/images/projects/interior-design-1",
+    folder: "/images/projects/interior-design",
     images: ["1.png", "2.png", "3.png", "4.png", "5.png"],
-  },
-  {
-    number: "04",
-    title: "Interior Design",
-    description:
-      "Contemporary interior spaces where materials, lighting, furniture, and functionality come together.",
-    folder: "/images/projects/interior-design-2",
-    images: ["1.png", "2.png", "3.png", "4.png", "5.png", "6.png"],
   },
 ];
 

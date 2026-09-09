@@ -95,7 +95,7 @@ export default function Footer() {
         />
 
         {/* Dark overlay */}
-        <div className="absolute inset-0 bg-[#173B38]/50" />
+        <div className="absolute inset-0 bg-[#173B38]/70" />
       </div>
 
       {/* Footer Content */}
