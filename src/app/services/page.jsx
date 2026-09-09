@@ -288,6 +288,7 @@ export default function ServicesPage() {
                           src={service.image}
                           alt={service.title}
                           fill
+                          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 50vw"
                           className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
                         />
 

@@ -10,13 +10,6 @@ export default function CTA() {
     <section className="relative overflow-hidden bg-[#173B38] px-6 py-20 sm:px-8 lg:px-12 lg:py-28">
       {/* Background Image */}
       <div className="absolute inset-0">
-        <Image
-          src="/images/home/cta.png"
-          alt=""
-          fill
-          className="object-cover object-center"
-        />
-
         {/* Overlay */}
         <div className="absolute inset-0 bg-[#173B38]/75" />
       </div>

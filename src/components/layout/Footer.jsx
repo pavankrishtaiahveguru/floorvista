@@ -90,6 +90,7 @@ export default function Footer() {
           src="/images/footer-image.png"
           alt=""
           fill
+           loading="eager"
           className="object-cover"
           priority={false}
         />
