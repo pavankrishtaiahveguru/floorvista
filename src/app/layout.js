@@ -15,9 +15,17 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
+  metadataBase: new URL("https://www.floorvista.com"),
+
   title: "Floorvista Design Consultants",
+
   description:
     "Floorvista Design Consultants — Building Planning, Interior Design, and Structural Design.",
+
+  alternates: {
+    canonical: "/",
+  },
+
   keywords: [
     "Floorvista Design Consultants",
     "Floorvista",
@@ -38,6 +46,7 @@ export const metadata = {
     "Architects in Mancherial",
     "Telangana Architecture",
   ],
+
   icons: {
     icon: "/icon.png",
     shortcut: "/icon.png",
@@ -49,9 +58,10 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
+      data-scroll-behavior="smooth"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
+      <body className="flex min-h-full flex-col">
         <Navbar />
 
         <main className="flex-1">{children}</main>

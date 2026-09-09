@@ -51,13 +51,13 @@ export default function Hero() {
                 delay: 0.1,
                 ease: "easeOut",
               }}
-              className="max-w-4xl text-5xl font-light leading-[0.95] tracking-[-0.03em] text-white sm:text-6xl md:text-7xl lg:text-[6.5rem]"
+              className="max-w-8xl text-5xl font-light leading-[0.95] tracking-[-0.03em] text-white sm:text-6xl md:text-7xl lg:text-[6rem]"
             >
-              Shaping
+              Architecture Planning
               <br />
-              Tomorrow&apos;s
+              Interior Design
               <br />
-              Commercial Spaces
+              Elevation design
             </motion.h1>
 
             {/* Description */}

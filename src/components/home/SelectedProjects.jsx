@@ -16,7 +16,7 @@ const projects = [
   },
   {
     number: "02",
-    title: "Interior Design 01",
+    title: "Interior Design",
     category: "INTERIOR DESIGN",
     image: "/images/projects/interior-design/3.png",
     folder: "interior-design",
