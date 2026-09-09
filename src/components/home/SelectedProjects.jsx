@@ -8,6 +8,14 @@ import { motion } from "framer-motion";
 const projects = [
   {
     number: "01",
+    title: "Architectural Planning",
+    category: "ARCHITECTURAL PLANNING",
+    image: "/images/projects/architectural-planning/3.png",
+    folder: "architectural-planning",
+    sectionId: "architectural-planning-01",
+  },
+  {
+    number: "02",
     title: "Elevation Design",
     category: "ELEVATION DESIGN",
     image: "/images/projects/elevation-design/12.jpg",
@@ -15,20 +23,12 @@ const projects = [
     sectionId: "elevation-design-02",
   },
   {
-    number: "02",
+    number: "03",
     title: "Interior Design",
     category: "INTERIOR DESIGN",
     image: "/images/projects/interior-design/3.png",
     folder: "interior-design",
     sectionId: "interior-design-03",
-  },
-  {
-    number: "03",
-    title: "Architectural Planning",
-    category: "ARCHITECTURAL PLANNING",
-    image: "/images/projects/architectural-planning/3.png",
-    folder: "architectural-planning",
-    sectionId: "architectural-planning-01",
   },
 ];
 
