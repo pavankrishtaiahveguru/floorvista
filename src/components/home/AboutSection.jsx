@@ -122,6 +122,7 @@ export default function AboutSection() {
             alt="FloorVista architectural design"
             width={1000}
             height={750}
+            loading="eager"
             className="h-[450px] w-full object-cover sm:h-[550px]"
           />
 
