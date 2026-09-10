@@ -208,7 +208,7 @@ Metadata is configured in `src/app/layout.js` via the Next.js Metadata API:
 | Title          | Floorvista Design Consultants                                                      |
 | Description    | Floorvista Design Consultants — Building Planning, Interior Design, and Structural Design. |
 | Keywords       | Brand and service keywords, including local keywords (e.g. "Architects in Mancherial", "Telangana Architecture") |
-| Canonical URL  | `https://www.floorvista.com/` (`metadataBase` with canonical path `/`)             |
+| Canonical URL  | `https://www.floorvista.in/` (`metadataBase` with canonical path `/`)             |
 | Favicon / icon | `/icon.png` (icon, shortcut, and Apple touch icon)                                 |
 
 ---

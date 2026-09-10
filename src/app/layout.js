@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  metadataBase: new URL("https://www.floorvista.com"),
+  metadataBase: new URL("https://www.floorvista.in"),
 
   title: "Floorvista Design Consultants",
 
