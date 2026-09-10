@@ -53,11 +53,9 @@ export default function Hero() {
               }}
               className="max-w-8xl text-5xl font-light leading-[0.95] tracking-[-0.03em] text-white sm:text-6xl md:text-7xl lg:text-[6rem]"
             >
-              Architecture Planning
+              Designing Dreams,
               <br />
-              Interior Design
-              <br />
-              Elevation design
+              Defining Spaces
             </motion.h1>
 
             {/* Description */}
