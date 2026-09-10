@@ -211,6 +211,7 @@ export default function AboutPage() {
         <div className="pointer-events-none absolute -left-40 top-10 h-[420px] w-[420px] rounded-full border border-[#173B38]/[0.04]" />
 
         <div className="relative z-10 mx-auto max-w-7xl">
+          {/* Section Header */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -225,51 +226,96 @@ export default function AboutPage() {
                 The Visionary
               </p>
             </div>
-
-            <h2 className="text-4xl font-light leading-tight tracking-[-0.035em] sm:text-5xl lg:text-6xl">
-              The mind behind <span className="italic">FloorVista.</span>
-            </h2>
           </motion.div>
 
+          {/* Founder + Story */}
           <motion.div
             initial={{ opacity: 0, y: 35 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.2 }}
             transition={{ duration: 0.9, ease: "easeOut" }}
-            className="grid gap-10 lg:grid-cols-[0.7fr_1.3fr] lg:items-start lg:gap-20"
+            className="grid gap-14 lg:grid-cols-[0.75fr_1.25fr] lg:items-start lg:gap-24"
           >
-            {/* Name */}
+            {/* Founder Image + Details */}
             <div>
-              <p className="text-xs font-medium uppercase tracking-[0.25em] text-[#173B38]/40">
-                Founder
-              </p>
+              <motion.div
+                whileHover={{ scale: 1.015 }}
+                transition={{ duration: 0.5, ease: "easeOut" }}
+                className="group relative mx-auto aspect-[3/3] max-w-md overflow-hidden rounded-[1.5rem] bg-[#E8ECE9]"
+              >
+                <Image
+                  src="/images/about/vivek.jpg"
+                  alt="Talla Vivek — Architectural Designer"
+                  fill
+                  className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
+                  sizes="(max-width: 1024px) 100vw, 40vw"
+                />
 
-              <h3 className="mt-4 text-3xl font-light tracking-tight text-[#173B38] sm:text-4xl">
-                Talla Vivek
-              </h3>
+                {/* Subtle overlay */}
+                <div className="absolute inset-0 bg-[#173B38]/5 transition-colors duration-500 group-hover:bg-[#173B38]/10" />
+              </motion.div>
 
-              <div className="mt-6 h-px w-16 bg-[#C79A3B]" />
+              {/* Founder Details */}
+              <div className="mt-7">
+                <p className="text-[10px] font-medium uppercase tracking-[0.3em] text-[#173B38]/40">
+                  Founder
+                </p>
+
+                <h3 className="mt-2 text-3xl font-light tracking-tight text-[#173B38] sm:text-4xl">
+                  Talla Vivek
+                </h3>
+
+                <div className="mt-2 flex items-center gap-3">
+                  <div className="h-px w-8 bg-[#C79A3B]" />
+
+                  <p className="text-[10px] font-medium uppercase tracking-[0.22em] text-[#173B38]/50">
+                    Architectural Designer
+                  </p>
+                </div>
+              </div>
             </div>
 
             {/* Story */}
-            <div className="max-w-3xl">
-              <p className="text-lg leading-8 text-[#173B38]/70 sm:text-xl sm:leading-9">
-                <strong className="font-medium text-[#173B38]">
-                  Talla Vivek
-                </strong>{" "}
-                is driven by a deep passion for architecture, creativity, and
-                visualization. He believes architecture is more than designing
-                spaces—it is about creating experiences, expressing ideas, and
-                bringing imagination to life.
-              </p>
+            <div className="max-w-3xl lg:pt-2">
+              {/* Intro */}
+              <div className="relative pl-7 sm:pl-9">
+                {/* Vertical Accent */}
+                <div className="absolute left-0 top-1 h-[calc(100%-0.5rem)] w-px bg-[#C79A3B]" />
 
-              <p className="mt-6 text-base leading-8 text-[#173B38]/60 sm:text-lg">
-                With a strong appreciation for thoughtful design and visual
-                storytelling, his vision is to transform concepts into spaces
-                that feel purposeful, inspiring, and timeless. Through
-                FloorVista, he strives to explore new possibilities and create
-                designs that connect creativity with everyday living.
-              </p>
+                <p className="text-xl font-light leading-8 tracking-tight text-[#173B38] sm:text-2xl sm:leading-10">
+                  <strong className="font-medium">Talla Vivek</strong> is driven
+                  by a deep passion for architecture, creativity, and
+                  visualization.
+                </p>
+              </div>
+
+              {/* Story Content */}
+              <div className="mt-8 space-y-6 text-base leading-8 text-[#173B38]/60 sm:text-lg">
+                <p>
+                  He believes architecture is more than designing spaces—it is
+                  about creating experiences, expressing ideas, and bringing
+                  imagination to life.
+                </p>
+
+                <p>
+                  With a strong appreciation for thoughtful design and visual
+                  storytelling, his vision is to transform concepts into spaces
+                  that feel purposeful, inspiring, and timeless.
+                </p>
+
+                <p>
+                  Through FloorVista, he strives to explore new possibilities
+                  and create designs that connect creativity with everyday
+                  living.
+                </p>
+              </div>
+
+              {/* Closing Statement */}
+              <div className="mt-9">
+                <p className="text-sm font-medium italic text-[#173B38] sm:text-base">
+                  Designing ideas into experiences.
+                </p>
+              </div>
             </div>
           </motion.div>
         </div>

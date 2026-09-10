@@ -26,7 +26,7 @@ const projects = [
     number: "03",
     title: "Interior Design",
     category: "INTERIOR DESIGN",
-    image: "/images/projects/interior-design/3.png",
+    image: "/images/projects/interior-design/1.jpg",
     folder: "interior-design",
     sectionId: "interior-design-03",
   },

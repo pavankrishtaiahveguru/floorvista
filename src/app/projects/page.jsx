@@ -40,7 +40,21 @@ const serviceProjects = [
     description:
       "Elegant interiors designed around comfort, character, functionality, and everyday living.",
     folder: "/images/projects/interior-design",
-    images: ["1.png", "2.png", "3.png", "4.png", "5.png"],
+    images: [
+      "1.jpg",
+      "2.jpg",
+      "3.jpg",
+      "4.jpg",
+      "5.jpg",
+      "6.jpg",
+      "7.jpg",
+      "8.jpg",
+      "9.jpg",
+      "10.jpg",
+      "11.jpg",
+      "12.jpg",
+      "13.jpg",
+    ],
   },
 ];
 
@@ -216,6 +230,7 @@ export default function ProjectsPage() {
                       src={`${service.folder}/${featuredImage}`}
                       alt={`${service.title} project`}
                       fill
+                      loading={serviceIndex === 0 ? "eager" : "lazy"}
                       priority={serviceIndex === 0}
                       className="object-cover transition-transform duration-1000 ease-out group-hover:scale-[1.035]"
                       sizes="(max-width: 1024px) 100vw, 65vw"
